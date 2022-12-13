@@ -1,22 +1,25 @@
 *{
-    margin: 0;
- padding: 0;
- box-sizing:border-box;
- }
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
 
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
 
- .navUM{
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center; 
-    position: fixed;
-   padding-right: 50px;
-  }
-
- .PortLogo{
+.NavBar{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center; 
+  position: fixed;
+  padding-right: 50px;
+}
+.PortLogo{
   display: flex;
   font-weight: bold;
   font-size: 30px;
@@ -25,93 +28,112 @@
 }
 
 
+.Letra-grande{
+  color:black;
+}
 
- li{
-  
+li{
   color: #dad5d5;
-    list-style: none;
-    padding: 10px; 
-    float: left;
+  list-style: none;
+  padding: 10px; 
+  float: left;
+}
+
+.texto p{
+  padding-top: 10px;
+  height: 10vh;
+  width: 55vw;
+  display: flex;
+  
+}
+
+.texto p:hover{
+  font-size: 30px;
+  color: white;
+  transition: 0.1s;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 li:hover{
-font-size: 20px;
-color: black;
-transition: 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+  transition: 0.5s;
 }
-
-  /*--BANNER--*/
+/*--BANNER--*/
 
 .banner{
   background-image:url(./imagens/laranja\ azul\ recorte.png);
   background-repeat: no-repeat;
-    height: 90vh;
-    width: 100%;
-    background-position: center;
-   
- }
+  height: 90vh;
+  width: 100%;
+  background-position: center;
+}
 
 
- .texto {
-   display: flex;
+.texto {
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 220px;
-    position: absolute;
-    color:#fff;
-    font-size: 28px;
-  
+  position: absolute;
+  color:#fff;
+  font-size: 28px; 
 }
 
-  /*--MAIN--*/
+/*--MAIN--*/
 
 .global{
   padding-top: 30px;
-    display: flex;
-    height: 111vh;
-    justify-content: center;
+  display: flex;
+  height: 111vh;
+  justify-content: center;
+}
+
+img{
+ height: 200px;
 }
 
 
-
-
-img{
-    height: 200px;
+.sumir img:hover{
+  
+  transition: 0.5s;
+  cursor: pointer;
 }
 .section1 img:hover{
   height: 205px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .section1{
- 
-  height: 33vh;
-    justify-content: space-between;
-    display: flex;
-    width: 60vw;    
+  height: 34vh;
+  justify-content: space-between;
+  display: flex;
+   width: 60vw;    
 }
 
 
-
-  
-  /*--FOOTER--*/
- footer{
-    background-color: #dad5d5;
-    height: 15vh;
-    display: flex;
+/*--FOOTER--*/
+footer{
+  background-color: #dad5d5;
+  height: 15vh;
+  display: flex;
   align-items: center;
- }
+}
 
- footer img{
+footer img{
   height: 4vh;
- margin-left: 20px;
- }
+  margin-left: 20px;
+}
+
  h5{
-  margin-left: 15vw;
- }
+ margin-left: 15vw;
+}
  p{
   margin-left: 1vw;
- }
+}
 
  
 .botão{
@@ -123,28 +145,32 @@ img{
 .Copyright{
   display: none;
 }
-
- @media screen and (max-width:600px){
- 
-
- .navUM {
-width: 100vw;
- }
- .liNav{
+.topo{
   display: none;
- }
+}
+
+@media screen and (max-width:600px){
+ 
+
+.NavBar{
+width: 100vw;
+}
+
+.liNav{
+  display: none;
+}
 
  
- .botão{
+.botão{
   display:flex;
   align-items: center;
   justify-content: center;
   font-size: 20px;
   height: 50px;
   width: 150px;
-border-style: none;
-color: white;
-background-color: black;
+  border-style: none;
+  color: white;
+  background-color: black;
 }
 
  
@@ -153,31 +179,26 @@ background-color: black;
   font-weight: bold;
   font-size: 30px;
   width: 80vw;
- 
-  }
+}
 
 
- .banner{
- 
-height: 100vh;
-width: 100vw;
-background-position: right;
-background-repeat: no-repeat;
+.banner{
+  height: 100vh;
+  width: 100vw;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .texto {
-
-   font-size: 28px;
- 
+  font-size: 28px;
 }
 
 img{
   height: 200px;
 }
 
-
- .global{
-    height: 550vh;
+.global{
+  height: 560vh;
 }
 
 
@@ -185,75 +206,73 @@ img{
   display: flex;
   height: 40vh;
   flex-direction: column;
-width: 40vw;
-margin-bottom: 640px;
+  width: 40vw;
+  margin-bottom: 640px;
 } 
-
-
 
 
 .footerresponsive{
   display:flex;
-  
   border-style: solid;
-background-color: aqua;
-height: 10vh;
-width: 300px;
-align-items: center;
-justify-content: center;
-margin-top: 30px;
-margin-left:150px;
+  background-color: aqua;
+  height: 10vh;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left:150px;
 }
 
 footer{
-background-color: #fff;
-height: 15vh;
-width: 100vw;
- display: flex;
-align-items: center;
+  background-color: #fff;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
 }
 
 footer img{
-height: 4vh;
-margin-left: 20px;
+  height: 4vh;
+  margin-left: 20px;
 }
+
 h5{
-margin-left: 15vw;
+  margin-left: 15vw;
 }
 p{
-margin-left: 1vw;
+  margin-left: 1vw;
 }
 
 
 .aparecer{
   display: none;
-  
   background-color: aquamarine;
   display: flex;
   width: 50vw;
- justify-content: center;
- margin-left: 22%;
+  justify-content: center;
+  margin-left: 22%;
 }
+
 .sumir{
   display: none;
 }
 
 .Copyright{
- 
-  display: flex;
-  flex-direction: column;
-width: 70vh;
-font-size: 15px;
-margin-left: 22%;
+ display: flex;
+ width: 70vh;
+ font-size: 15px;
+ margin-left: 22%;
+ flex-direction: column;
 }
+
 .topo {
-
-width: 80%;
+  width: 80%;
   display: flex;
-
-justify-content: end;
+  justify-content: end;
 }
-.topo p{
+
+
+.bottontop{
   height: 40px;
   width: 60px;
   border-style: none;
@@ -263,5 +282,5 @@ justify-content: end;
   position: absolute;
 }
 
-}
 
+}
